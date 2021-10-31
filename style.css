@@ -15,8 +15,17 @@ html {
   font-family: 'DM Sans', sans-serif;
 }
 
+.logo {
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+.head {
+  padding-bottom: 50px;
+  padding-left: 50px;
+}
+
 .container {
-  padding: 2rem 0rem 2rem 2rem;
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -37,7 +46,7 @@ html {
 
 .middle {
   width: 70%;
-  height: 90vh;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -46,58 +55,66 @@ html {
   font-size: 14px;
   color: #9a9fbf;
   padding-bottom: 3px;
-  letter-spacing: -5%;
+  letter-spacing: -0.025rem;
   font-weight: 500;
 }
 
 .middle-title {
   font-size: 64px;
   font-weight: 600;
-  letter-spacing: -5%;
+  letter-spacing: -0.1rem;
   padding-bottom: 8px;
   width: 690px;
+  word-spacing: -0.3rem;
 }
 
 .end {
   font-size: 18px;
-  letter-spacing: -5%;
+  letter-spacing: -0.025rem;
   font-weight: 400;
   padding-bottom: 12px;
+  width: 667px;
 }
 .title-launch {
   font-size: 14px;
   font-weight: 500;
   color: #9a9fbf;
   padding-bottom: 8px;
-  letter-spacing: -5%;
+  letter-spacing: -0.025rem;
 }
 
 .form-box {
-  border-radius: 0.5rem;
+  border-radius: 0.5rem
 }
 
 .form-box input {
   font-size: 18px;
-  color: #9a9fbf;
+  color: #000;
   padding: 1rem 1.5rem;
   border: none;
   outline: none;
-  width: 45rem;
-  background-color: rgba(154, 159, 191, 0.1);
+  width: 500px;
+  margin-right: 12px;
+  background-color: rgba(245, 245, 249);
   border-radius: 6px;
   font-family:inherit;
+  letter-spacing: -0.025rem;
 }
 
 .form-box button {
   color: #ffffff;
   padding: 1rem 1rem;
-  margin-left: 1.2rem;
   font-size: 18px;
   border: none;
   border-radius: 0.5rem;
   background: #333333;
   cursor: pointer;
   font-family: inherit;
+  letter-spacing: -0.025rem;
+}
+
+::-webkit-input-placeholder {
+  color: #9a9fbf;
 }
 
 .form-box button:hover {

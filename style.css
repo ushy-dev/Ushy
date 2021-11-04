@@ -139,6 +139,12 @@
   color: #ececec;
   cursor: pointer;
 }
+.mobile_view{
+  text-align: right;
+}
+.ushy {
+  overflow-x: hidden;
+}
 
 /* Media Queries 
 /*Big tablets to 1200px (widths smaller than the 1440px row) */
@@ -292,7 +298,7 @@
 @media only screen and (max-width: 1500px) {
   .mobile {
     padding-left: 25px;
-    margin-top: 200px;
+    margin-top: 100px;
   }
 } 
 
@@ -300,6 +306,7 @@
   .mobile_view {
     justify-content: center;
     margin-top: 50px;
+    text-align: center;
   }
   .mobile {
     padding-left: 25px;

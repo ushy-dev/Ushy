@@ -20,6 +20,10 @@
   padding-left: 50px;
 }
 
+.container {
+  max-width: 95%;
+}
+
 /* .head {
   padding-bottom: 50px;
   padding-left: 50px;
@@ -142,8 +146,15 @@
 .mobile_view{
   text-align: right;
 }
+
+.mobile{
+  padding-top: 400px;
+
+}
+
 .ushy {
   overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 /* Media Queries 
@@ -295,7 +306,7 @@
   }
 } */
 
-@media only screen and (max-width: 1500px) {
+@media only screen and (max-width: 1200px) {
   .mobile {
     padding-left: 25px;
     margin-top: 250px;

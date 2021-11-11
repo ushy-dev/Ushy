@@ -14,35 +14,29 @@ html {
   box-sizing: border-box;
   font-family: 'DM Sans', sans-serif;
 }
-.top{
-  grid-area: top;
-}
+
 .logo {
   padding-top: 50px;
   padding-left: 50px;
 }
 
 .head {
-   grid-area: head;
-   margin-top:5rem;
   padding-bottom: 50px;
   padding-left: 50px;
 }
 
 .container {
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
 }
 
 .image {
-  margin-top:12rem;
-  margin-right:-4rem;
-  grid-area:image;
-  display:flex;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  width: 30%;
   justify-content: flex-end;
-  align-items:center;
-  height: 90vh;
 }
 
 .img {
@@ -51,11 +45,11 @@ html {
 }
 
 .middle {
-  width:100%;
-  display:grid;
-  grid-column: 1fr 1fr;
-  grid-template-areas: "top image"
-                        "head image";
+  width: 70%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 .title {
   font-size: 14px;
@@ -130,7 +124,7 @@ html {
 }
 
 /* Media Queries 
-Big tablets to 1200px (widths smaller than the 1440px row)  */
+/*Big tablets to 1200px (widths smaller than the 1440px row) */
 @media only screen and (max-width: 1200px) {
   .container {
     padding: 2rem;
@@ -141,16 +135,10 @@ Big tablets to 1200px (widths smaller than the 1440px row)  */
     top: 2rem;
   }
   .image {
-    margin-top: 3rem;
+    top: 5rem;
   }
   .title {
     font-size: 1.5rem;
-  }
-  .middle{
-    grid-column: 1fr;
-  grid-template-areas: "top"
-                        "image"
-                        "head ";
   }
   .middle-title {
     font-size: 4rem;
@@ -172,8 +160,8 @@ Big tablets to 1200px (widths smaller than the 1440px row)  */
     width: 35rem;
   }
 }
-/* Small tablets to big tablets: from 768 to 1023px */
- @media only screen and (max-width: 750px) {
+/*Small tablets to big tablets: from 768 to 1023px */
+@media only screen and (max-width: 1023px) {
   .container {
     padding: 2rem;
     margin-left: 0.5rem;
@@ -181,12 +169,6 @@ Big tablets to 1200px (widths smaller than the 1440px row)  */
   .logo {
     left: 6rem;
     top: 2rem;
-  }
-  .middle{
-    grid-column: 1fr;
-  grid-template-areas: "top"
-                        "image"
-                        "head ";
   }
   .image {
     width: 40rem;
@@ -217,48 +199,25 @@ Big tablets to 1200px (widths smaller than the 1440px row)  */
     width: 35rem;
   }
 }
-/* Small phones to small tablets: from 481px to 767px */
-@media only screen and (max-width: 480px) {
-  .container{
-    width:100vw;
-    padding: auto 0;
-    margin:auto 0;
-  }
+/*Small phones to small tablets: from 481px to 767px*/
+@media only screen and (max-width: 767px) {
   .top {
     padding: 5rem 0;
   }
   .logo {
     position: absolute;
-    width: 15rem;
+    width: 10rem;
+    height: 4rem;
     left: 4rem;
     top: 2rem;
   }
-  .head{
-    width:100%;
-     padding-left: 10px;
-  }
   .image {
-  margin-top:2rem;
-  margin-right:0rem;
-  justify-content: flex-start;
-  align-items:center;
-  height: auto;
-}
-  .img {
-    width:350px;
-    margin-top:0rem;
-    margin-left:0rem;
-    align-self: flex-start;
-    padding-left:0;
+    display: auto;
   }
 
   .middle {
-    width:100vw;
-    overflow-x: hidden;
-     grid-column: 1fr;
-  grid-template-areas: "top"
-                        "image"
-                        "head ";
+    padding: 2rem;
+    width: 100%;
   }
   .title {
     font-size: 1rem;
@@ -274,33 +233,21 @@ Big tablets to 1200px (widths smaller than the 1440px row)  */
     font-size: 1rem;
   }
   .form {
-    width:100vw;
-    padding: 2rem 1rem;
+    padding: 2rem 2rem;
     font-weight: 700;
   }
-  .form-box{
-    width:80%;
-    display:flex;
-    flex-direction:column;
-    align-items: flex-start;
-    margin:auto 0;
-    padding-left:0;
-  }
   .form-box input {
-    width: 100%;
+    width: 25rem;
     font-size: 1rem;
-    margin-left:0;
   }
   .form-box button {
-    margin-top:1rem;
-     width: 50%;
-    padding: 1rem 0rem;
-    margin-left: 0rem;
+    padding: 1rem 1rem;
+    margin-left: 1rem;
     font-size: 1rem;
   }
 }
-/* Small phones from 0 to 480p */
-/* @media only screen and (max-width: 480px) {
+/*Small phones from 0 to 480p*/
+@media only screen and (max-width: 480px) {
   .top {
     padding-bottom: 10rem;
   }
@@ -323,4 +270,6 @@ Big tablets to 1200px (widths smaller than the 1440px row)  */
     margin-left: 0.5rem;
     font-size: 1rem;
   }
-} */
+}
+
+
